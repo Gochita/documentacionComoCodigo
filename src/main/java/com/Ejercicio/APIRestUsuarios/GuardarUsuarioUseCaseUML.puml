@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+[Client] --> (Controller)
+(Controller) <-> (Service)
+(Service) --> (Model)
+(Model) -> (Service)
+(Controller) --> [Client]
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+class UsuarioService{
+ - usuarioRepository : UsuarioRepository
+ --
+ + obtenerUsuarios : ArrayList<UsuarioModel>()
+ + guardarUsuario : UsuarioModel(UsuarioModel usuario)
+ + obtenerPorId : Optional<UsuarioModel>(Long id)
+ + obtenerPorPrioridad : ArrayList<UsuarioModel>(Integer prioridad)
+ + eliminarUsuario(Long id) : void
+ + actualizarUsuario(UsuarioModel usuario): UsuarioModel
+ + eliminarTodo() : void
+}
+@enduml

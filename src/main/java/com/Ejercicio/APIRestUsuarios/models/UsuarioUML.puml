@@ -1,0 +1,19 @@
+@startuml
+class UsuarioModel{
+ - id : long
+ - Nombre : String
+ - email : String
+ - prioridad : Integer
+ --
++ UsuarioModel(String nombre, String email, Integer prioridad)
+--
++ getId() : long
++ setId(long id) : void
++ getNombre() : String
++ setNombre(String nombre) : void
++ getEmail() : String
++ setEmail(String email) : void
++ getPrioridad() : Integer
++ setPrioridad(Integer prioridad) : void
+}
+@enduml

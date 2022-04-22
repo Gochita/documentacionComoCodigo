@@ -1,0 +1,9 @@
+@startuml
+interface UsuarioRepository{
+
+--
+ + findByPrioridad(Integer prioridad) : ArrayList<UsuarioModel>
+}
+
+
+@enduml
